@@ -1,0 +1,101 @@
+.right-space{
+	margin-right: 1em;
+}
+
+.remove-float{
+	float: none;
+}
+
+.top-space{
+	margin-top: 1.5em;
+}
+
+.big-top-space{
+	margin-top: 200px;
+}
+
+.large-padding{
+	padding: 10px 15px;
+}
+
+.black{
+	background-color:#222;
+}
+
+.white-text{
+	color:white;
+}
+
+nav{
+	/*Orientar el texto de la navegacion hacia la derecha*/
+	text-align: right;
+}
+nav li{
+	/*Todos los li dentro de un nav colocarlos uno al lado del otro*/
+	display: inline-block;
+	margin-right: 1em;
+	font-size: 1.1em;
+}
+
+nav li a{
+	/*Todos los links que esten dentro de un li que a su vez esten dentro de un nav
+	tengan un color blanco*/
+	color: white;
+}
+
+nav li a:hover{
+	color: white;
+}
+
+.white{
+	background-color: white;
+}
+
+.border{
+	border:solid 1px #eee;
+}
+
+/*Para hacer una intercalacion de colores blanco y gris por cada elemento*/
+.tr:nth-of-type(odd){/*odd -> solo los impares*/
+	background-color: #eee;
+}
+
+/*Mostrar los botones alineados*/
+form.link{
+	display: inline-block;
+}
+
+/*El boton de submit dentro de un formulario con la clase link*/
+/*ESTO ES PARA EL BOTON DE ELIMINAR*/
+form.link input[type="submit"]{
+	background-color: transparent;
+	border: none;
+	color: rgb(200,50,50);
+}
+
+/*Este es el contenedor donde colocamos la informacion de la imagen*/
+.img-container{
+	width: 700px;
+	/*Para mantener el responsive*/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/*En el titulo de la imagen*/
+.img-container h1, .img-container h2{
+	padding: 15px;
+	border-bottom: 1px solid #222;
+}
+
+/*Parrafo del image container, que es donde mostramos al autor de la imagen*/
+.img-container p{
+	text-align: right;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+/*Reglas para mostrar las imagenes*/
+/*Default para que las imagenes nunca superen el contenedor en el que se encuentran*/
+img{
+	max-width: 100%;
+}
